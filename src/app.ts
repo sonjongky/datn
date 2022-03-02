@@ -18,7 +18,7 @@ app.use(todoRoutes)
 const uri: string = `mongodb+srv://sonnguyen:10012000@cluster0.fbo72.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 const options = { useNewUrlParser: true, useUnifiedTopology: true }
 mongoose.set('useFindAndModify', false)
-
+console.log("abc");
 mongoose
     .connect(uri, options)
     .then(() =>
