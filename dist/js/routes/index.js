@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const todos_1 = require("../controllers/todos");
+const user_1 = require("../controllers/user");
 const router = (0, express_1.Router)();
-router.get("/todos", todos_1.getTodos);
-router.get("/get-todo/:id", todos_1.getTodo);
-router.post("/add-todo", todos_1.addTodo);
-router.put("/edit-todo/:id", todos_1.updateTodo);
-router.delete("/delete-todo/:id", todos_1.deleteTodo);
+// router.get("/todos", getTodos)
+// router.get("/get-todo/:id", getTodo)
+// router.post("/add-todo", addTodo)
+// router.put("/edit-todo/:id", updateTodo)
+// router.delete("/delete-todo/:id", deleteTodo)
+router.post("/login/:username/:password", user_1.login);
 exports.default = router;

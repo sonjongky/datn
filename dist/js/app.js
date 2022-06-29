@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 4000;
 app.use((0, cors_1.default)());
 app.use(routes_1.default);
-const uri = `mongodb+srv://sonnguyen:10012000@cluster0.fbo72.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://sonnguyen:QleH7VoN0ruFB77S@cluster0.w1sn3.mongodb.net/test`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose_1.default.set('useFindAndModify', false);
 mongoose_1.default
