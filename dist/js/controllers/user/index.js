@@ -17,12 +17,11 @@ const user_1 = __importDefault(require("../../models/user"));
 const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { username, password } = req.params;
-        console.log("username", username);
         const exitedUser = yield user_1.default.findOne({
-            username: username,
-            password: password,
+            Username: username,
+            Password: password,
         });
-        res.status(200).json({ exitedUser });
+        res.status(200).json(exitedUser);
         return exitedUser;
     }
     catch (error) {

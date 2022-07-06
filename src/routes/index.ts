@@ -12,6 +12,6 @@ const router: Router = Router();
 
 // router.delete("/delete-todo/:id", deleteTodo)
 
-router.post("/login/:username/:password", login);
+router.get("/login/:username/:password", login);
 
 export default router;

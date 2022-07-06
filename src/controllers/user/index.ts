@@ -9,10 +9,10 @@ export const login = async (
   try {
     const { username, password } = req.params;
     const exitedUser = await User.findOne({
-      username: username,
-      password: password,
+      Username: username,
+      Password: password,
     });
-    res.status(200).json({ exitedUser });
+    res.status(200).json(exitedUser);
     return exitedUser;
   } catch (error) {
     throw error;

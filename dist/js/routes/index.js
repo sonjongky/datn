@@ -8,5 +8,5 @@ const router = (0, express_1.Router)();
 // router.post("/add-todo", addTodo)
 // router.put("/edit-todo/:id", updateTodo)
 // router.delete("/delete-todo/:id", deleteTodo)
-router.post("/login/:username/:password", user_1.login);
+router.get("/login/:username/:password", user_1.login);
 exports.default = router;
